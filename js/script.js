@@ -48,7 +48,7 @@ function setProductRecommendation (product) {
         inner +='    <div>De: ' + product.oldPrice + '</div>';
         inner +='    <div class="product-price">' +
                 '        <div class="price">Por: <strong>' + product.price + '</strong></div>' +
-                '        <div class="price-condition">' + product.productInfo.paymentConditions + '<br><span class="condition">sem juros</span></div>' +
+                '        <div class="price-condition"><strong>' + product.productInfo.paymentConditions + '<br><span class="condition">sem juros</span></strong></div>' +
                 '    </div>';
                 '</div>';
     element.innerHTML = inner;
