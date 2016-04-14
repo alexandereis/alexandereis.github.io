@@ -27,14 +27,14 @@
                         </div>
                         <div>De: <span id=product-visited-oldPrice></span></div>
                         <div class="product-price">                            
-                            <div>Por: <strong><span id="product-visited-price"></span></strong></div>
-                            <div><strong><span id="product-visited-payment-conditions"></span><br><span class="condition">sem juros</span><strong></div>
+                            <div class="price">Por: <strong><span id="product-visited-price"></span></strong></div>
+                            <div class="price-condition"><span id="product-visited-payment-conditions"></span><br><span class="condition">sem juros</span></div>
                         </div>
                     </a>
                 </div>
                 <div class="product-slider">
                     <div class="product-slider-back">
-                        <a href="javascript:void(0)" onclick="MoveBack()"><i class="icon"></i></a>
+                        <a href="javascript:void(0)" onclick="MoveBack()"><i class="icon inactive" id="move-back"></i></a>
                     </div>
                     <div class="product-slider-container">
                         <div id="product-slider-inner" class="product-slider-inner">
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="product-slider-forward">
-                        <a href="javascript:void(0)" onclick="MoveForward()"><i class="icon"></i></a>
+                        <a href="javascript:void(0)" onclick="MoveForward()"><i class="icon" id="move-forward"></i></a>
                     </div>
                 </div>
             </div>

@@ -47,8 +47,8 @@ function setProductRecommendation (product) {
                 if (product.oldPrice != null)
         inner +='    <div>De: ' + product.oldPrice + '</div>';
         inner +='    <div class="product-price">' +
-                '        <div>Por: <strong>' + product.price + '</strong></div>' +
-                '        <div><strong>' + product.productInfo.paymentConditions + '<br><span class="condition">sem juros</span></strong></div>' +
+                '        <div class="price">Por: <strong>' + product.price + '</strong></div>' +
+                '        <div class="price-condition">' + product.productInfo.paymentConditions + '<br><span class="condition">sem juros</span></div>' +
                 '    </div>';
                 '</div>';
     element.innerHTML = inner;
@@ -67,6 +67,14 @@ function MoveForward () {
     
     index++;
     
+    if (index >= total - 4) {
+        var moveForward = document.getElementById('move-forward');
+        moveForward.className = "icon inactive";
+    }
+    
+    var moveBack = document.getElementById('move-back');
+    moveBack.className = "icon";
+    
     var left = index * 160;
     
     var inner = document.getElementById('product-slider-inner');
@@ -79,6 +87,14 @@ function MoveBack () {
     }
     
     index--;
+    
+    if (index <= 0) {
+        var moveBack = document.getElementById('move-back');
+        moveBack.className = "icon inactive";
+    }
+    
+    var moveForward = document.getElementById('move-forward');
+    moveForward.className = "icon";
     
     var left = index * 160;
     

@@ -19,12 +19,9 @@ body {
     padding: 10px 15px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background: #e5f1fb; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#e7f1fc, #e5f1fb); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* Standard syntax */
+    border-top-right-radius: 3px;    
+    background-color:#eff7fe;
+    background-image: linear-gradient(to bottom, rgba(239,247,254,.6), rgba(255,255,255,.1) 47%, rgba(229,241,251,1) 52%, rgba(229,241,251,1));
 }
 
 .panel-body {
@@ -43,6 +40,7 @@ body {
     background: -o-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* Standard syntax */
+    background: linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* Standard syntax */
 }
 
 .product, .product-visited,
@@ -51,7 +49,7 @@ body {
     float: left;
 }
 
-.product, .product-visited {
+.product {
     width: 140px;
     margin-right: 10px;
     padding: 5px;
@@ -60,12 +58,16 @@ body {
     font-size: 10px;
 }
 
+.product-visited {
+    width: 160px;
+}
+
 .product:hover {
     background: #e7f1fc; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#e7f1fc, #fff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#e7f1fc, #fff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#e7f1fc, #fff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#e7f1fc, #fff); /* Standard syntax */
+    background: -webkit-linear-gradient(#e5f1fb, #eff7fe, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e5f1fb, #eff7fe, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e5f1fb, #eff7fe, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e5f1fb, #e7f1fc, #fff); /* Standard syntax */
 }
 
 .product img {
@@ -107,6 +109,9 @@ body {
 .product-header h3 {
     color: #006699;
     width: 100%;
+    margin: 0px;
+    font-size: 12pt;
+    line-height: 1;
 }
 
 .product-slider-back .icon:before {
@@ -135,6 +140,14 @@ body {
   border-left: 10px solid #074c8d;
 }
 
+.product-slider-back .icon.inactive:before {
+    border-right: 10px solid #ddd;
+}
+
+.product-slider-forward .icon.inactive:before {
+    border-left: 10px solid #ddd;
+}
+
 i {
     font: 28px sans-serif;
     display: block;
@@ -142,9 +155,21 @@ i {
     margin-top: 50px;
 }
 
-.product-price{
+.product-price {
   color: #cc003f;
-  font-size: 13px;
+  font-weight: bold;
+}
+
+.product-price .price strong {
+  font-size: 16px; 
+}
+
+.product-price .price-condition {
+  line-height: 1; 
+}
+
+.product-price .price-condition strong {
+  font-size: 13px; 
 }
 
 .condition{
