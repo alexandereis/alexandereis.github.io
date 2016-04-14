@@ -26,21 +26,21 @@ body {
 
 .panel-body {
     padding: 15px;
-    border: 1px solid #e7f1fc;
+    /* border: 1px solid #e7f1fc; */
     overflow: hidden;
 }
 
 .panel-footer {
     padding: 10px 15px;
-    border-top: 1px solid #e7f1fc;
+    /* border-top: 1px solid #e7f1fc; */
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    background: #e5f1fb; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* Standard syntax */
-    background: linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* Standard syntax */
+    background: #e5f1fb;
+    background: -webkit-linear-gradient(#ffffff, #ffffff, #e5f1fb);
+    background: -o-linear-gradient(#ffffff, #ffffff, #e5f1fb);
+    background: -moz-linear-gradient(#ffffff, #ffffff, #e5f1fb);
+    background: linear-gradient(#ffffff, #ffffff, #e5f1fb);
+    background: linear-gradient(#ffffff, #ffffff, #e5f1fb);
 }
 
 .product, .product-visited,
