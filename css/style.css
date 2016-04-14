@@ -1,0 +1,163 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    width: 900px;
+}
+
+.panel-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #e5f1fb; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e7f1fc, #e5f1fb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* Standard syntax */
+}
+
+.panel-body {
+    padding: 15px;
+    border: 1px solid #e7f1fc;
+    overflow: hidden;
+}
+
+.panel-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #e7f1fc;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #e5f1fb; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eff7fe, #e7f1fc, #e5f1fb); /* Standard syntax */
+}
+
+.product, .product-visited,
+.product-slider-back, .product-slider-forward,
+.product-slider-container {
+    float: left;
+}
+
+.product, .product-visited {
+    width: 140px;
+    margin-right: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 10px;
+}
+
+.product:hover {
+    background: #e7f1fc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e7f1fc, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e7f1fc, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e7f1fc, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e7f1fc, #fff); /* Standard syntax */
+}
+
+.product img {
+    border: 1px solid transparent;
+}
+
+.product:hover img {
+    border: 1px solid #bdd0e0;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.product-slider-container {
+    max-width: 640px;
+    overflow: hidden;
+}
+
+.product-slider-inner {
+    position: relative;
+    left: 0px;
+    transition-duration: 0.5s;
+}
+
+.product-visited, .product-slider {
+    display: table;
+    content: " ";
+}
+
+.product-visited .product {
+    border-right: 1px solid #ddd;
+}
+
+.product-image {
+    margin: auto;
+}
+
+.product-header h3 {
+    color: #006699;
+    width: 100%;
+}
+
+.product-slider-back .icon:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right: 10px solid #074c8d; 
+}
+
+.product-slider-forward .icon:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #074c8d;
+}
+
+i {
+    font: 28px sans-serif;
+    display: block;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+
+.product-price{
+  color: #cc003f;
+  font-size: 13px;
+}
+
+.condition{
+  font-size: 10px;
+}
+
+.product-name{
+  display: block;
+  display: -webkit-box;
+  max-width: 400px;
+  margin: 5px auto;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

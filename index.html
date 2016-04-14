@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chaordic OnSite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="panel">
+            <div class="panel-header">
+                <div class="product-visited product-header">
+                    <h3>Você visitou: </h3>
+                </div>
+                <div class="product-slider product-header">
+                    <h3>e talvez se interesse por:</h3>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="product-visited">
+                    <a id="product-visited" class="product" href="">
+                        <div class="product-image">
+                            <img id="product-visited-image" />
+                        </div>
+                        <div id="product-visited-name" class="product-name">
+                        </div>
+                        <div>De: <span id=product-visited-oldPrice></span></div>
+                        <div class="product-price">                            
+                            <div>Por: <strong><span id="product-visited-price"></span></strong></div>
+                            <div><strong><span id="product-visited-payment-conditions"></span><br><span class="condition">sem juros</span><strong></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-slider">
+                    <div class="product-slider-back">
+                        <a href="javascript:void(0)" onclick="MoveBack()"><i class="icon"></i></a>
+                    </div>
+                    <div class="product-slider-container">
+                        <div id="product-slider-inner" class="product-slider-inner">
+                            
+                        </div>
+                    </div>
+                    <div class="product-slider-forward">
+                        <a href="javascript:void(0)" onclick="MoveForward()"><i class="icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
